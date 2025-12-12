@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About DibaTech Resume</title>
+    <meta
+      name="description"
+      content="Learn about DibaTech Resume – a calm, focused platform for ready-to-use professional resume templates."
+    />
+    <meta name="author" content="DibaTech" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="dt-header">
+      <div class="dt-container dt-header-inner">
+        <a href="index.html" class="dt-logo">
+          <span class="dt-logo-mark">D</span>
+          <span class="dt-logo-text">DibaTech Resume</span>
+        </a>
+        <nav class="dt-nav" aria-label="Main">
+          <a href="index.html" class="dt-nav-link">Home</a>
+          <a href="instructions.html" class="dt-nav-link">Instructions</a>
+          <a href="about.html" class="dt-nav-link dt-nav-link--active">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="dt-hero dt-hero--subpage" aria-labelledby="about-title">
+        <div class="dt-container dt-hero-inner">
+          <div class="dt-hero-text">
+            <h1 id="about-title" class="dt-hero-title">About DibaTech Resume</h1>
+            <p class="dt-hero-secondary">
+              A quiet, focused space for resumes that help you tell your story with clarity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dt-section">
+        <div class="dt-container dt-content dt-about">
+          <article class="dt-about-block">
+            <h2 class="dt-section-title-small">What is DibaTech Resume?</h2>
+            <p>
+              DibaTech Resume is a fully static, thoughtfully designed collection of professional
+              resume templates. Each layout is crafted to feel balanced, calm, and easy to read,
+              without unnecessary noise or distractions.
+            </p>
+          </article>
+
+          <article class="dt-about-block">
+            <h2 class="dt-section-title-small">Why We Built It</h2>
+            <p>
+              Many resume tools feel complex, busy, or overwhelming. DibaTech created this platform
+              to offer the opposite experience: a simple place where you can immediately see
+              templates, download them, and start personalizing your story in minutes.
+            </p>
+          </article>
+
+          <article class="dt-about-block">
+            <h2 class="dt-section-title-small">Our Mission</h2>
+            <p>
+              DibaTech is committed to career empowerment through clarity and simplicity. We believe
+              that a resume should highlight your work, not fight for attention. Every template here
+              is built to support that mission—professional, calm, and ready to use.
+            </p>
+          </article>
+
+          <article class="dt-about-block">
+            <h2 class="dt-section-title-small">A Peaceful Experience</h2>
+            <p>
+              There are no sign-ups, complex flows, or hidden steps. You land on the homepage, see
+              your options, and get what you need. Our goal is to keep you focused on your next
+              opportunity, not on learning another tool.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="dt-footer">
+      <div class="dt-container dt-footer-inner">
+        <p class="dt-footer-copy">© <span id="year"></span> DibaTech. All rights reserved.</p>
+        <div class="dt-footer-links" aria-label="Social links">
+          <a href="#" class="dt-footer-link">LinkedIn</a>
+          <a href="#" class="dt-footer-link">Twitter</a>
+          <a href="#" class="dt-footer-link">Portfolio</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
+
