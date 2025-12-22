@@ -93,13 +93,11 @@ Header & Navigation
 }
 
 .dt-logo-mark {
-  width: 35px;
-  height: 35px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px rgba(26, 115, 232, 0.4);
 }
 
 .dt-logo-text {
@@ -401,6 +399,26 @@ Responsive
 }
 
 @media (max-width: 640px) {
+
+.dt-logo {
+  gap: 0.1rem;
+}
+
+.dt-logo-mark {
+  width: 25px;
+  height: 25px;
+}
+
+.dt-logo-text {
+  font-size: 0.65rem;
+  letter-spacing: 0.01rem;
+}
+
+.dt-nav-link {
+  padding: 0.2rem 0.7rem;
+  font-size: 0.7rem;
+}
+
   .dt-header-inner {
     padding-inline: 1.1rem;
   }
