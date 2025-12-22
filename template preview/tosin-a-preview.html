@@ -39,7 +39,7 @@
         </section>
         
         <section class="dt-section dt-container ">
-            <div class="dt-grid ">
+            <div class="dt-grid " id="previewInner">
                 <!-- Preview Card 1 -->
                 <article class="dt-card">
                     <div class="dt-card-media">
@@ -64,6 +64,14 @@
                 
                 
         </section>
+
+        <!-- Zoom Controls -->
+        <div class="zoom-controls">
+            <button class="dt-btn dt-btn-primary" id="zoomOut" aria-label="Zoom out">−</button>
+            <span class="zoom-level" id="zoomLevel">100%</span>
+            <button class="dt-btn dt-btn-primary" id="zoomIn" aria-label="Zoom in">+</button>
+            <button class="dt-btn dt-btn-ghost" id="zoomReset" aria-label="Reset zoom">Reset</button>
+        </div>
             
             <section class="dt-section dt-container">
                 <div class="dt-card-actions">
@@ -107,8 +115,6 @@
     </div>
 </footer>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<script src="preview.js"></script>
 </body>
 </html>
