@@ -617,6 +617,10 @@ Responsive
     flex-direction: column;
     align-items: stretch;
   }
+
+  .dt-btn {
+  font-size: 0.65rem;
+}
   
   .dt-content {
     padding: 1.2rem 1.1rem 1.5rem;

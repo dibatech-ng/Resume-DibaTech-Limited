@@ -1,15 +1,17 @@
  // Modal functionality
         const canvaModal = document.getElementById('canvaModal');
-        const editCanvaBtn = document.getElementById('editCanvaBtn');
+        const editCanvaBtns = document.querySelectorAll('.editCanvaBtn');
         const closeModalBtn = document.getElementById('closeModal');
         const cancelBtn = document.getElementById('cancelBtn');
         const openCanvaBtn = document.getElementById('openCanvaBtn');
 
-        // Open modal
-        editCanvaBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            canvaModal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        // Open modal - attach to all buttons with editCanvaBtn class
+        editCanvaBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                canvaModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
         });
 
         // Close modal functions
