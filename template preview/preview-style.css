@@ -187,16 +187,6 @@ Sections
 }
 
 /* ==========
-Grid
-========== */
-
-.dt-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.4rem;
-}
-
-/* ==========
 Cards
 ========== */
 
@@ -209,6 +199,7 @@ Cards
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  width: 65vw;
 }
 
 .dt-card-media {
@@ -487,10 +478,6 @@ Responsive
 =============== */
 
 @media (max-width: 900px) {
-  .dt-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  
   .dt-hero-title {
     font-size: 2rem;
   }
@@ -545,12 +532,9 @@ Responsive
     font-size: 0.98rem;
   }
   
-  .dt-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  
   .dt-card {
     padding: 0.85rem;
+    width: 90vw;
   }
   
   .dt-card-actions {
